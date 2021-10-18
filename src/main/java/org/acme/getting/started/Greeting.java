@@ -1,18 +1,13 @@
 package org.acme.getting.started;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class Greeting {
 
     private String greet;
-
-    public Greeting(String greet) {
-        this.greet = greet;
-    }
-
-    public String getGreet() {
-        return greet;
-    }
-
-    public void setGreet(String greet) {
-        this.greet = greet;
-    }
 }
