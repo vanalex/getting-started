@@ -1,5 +1,7 @@
 package org.acme.getting.started;
 
+import org.eclipse.microprofile.config.inject.ConfigProperty;
+
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -16,10 +18,20 @@ public class GreetingResource {
     @Inject
     Printer printer;
 
+    @ConfigProperty(name = "greeting.message")
+    String message;
+
     @GET
     public Response hello() {
         return Response.ok(new Greeting("Hello Rest Easy!")).build();
     }
+
+    @GET
+    @Path("message")
+    public Response message() {
+        return Response.ok(message).build();
+    }
+
 
     @GET
     @Path("/print")
