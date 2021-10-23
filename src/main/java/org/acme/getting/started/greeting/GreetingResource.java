@@ -1,8 +1,7 @@
-package org.acme.getting.started;
+package org.acme.getting.started.greeting;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
-import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -14,9 +13,6 @@ import javax.ws.rs.core.Response;
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class GreetingResource {
-
-    @Inject
-    Printer printer;
 
     @ConfigProperty(name = "greeting.message")
     String message;
@@ -32,13 +28,5 @@ public class GreetingResource {
         return Response.ok(message).build();
     }
 
-
-    @GET
-    @Path("/print")
-    @Produces(MediaType.APPLICATION_JSON)
-    @Consumes(MediaType.APPLICATION_JSON)
-    public Response print() {
-        return Response.ok(new Greeting(printer.print())).build();
-    }
 
 }

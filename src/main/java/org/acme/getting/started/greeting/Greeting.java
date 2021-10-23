@@ -1,9 +1,8 @@
-package org.acme.getting.started;
+package org.acme.getting.started.greeting;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 @AllArgsConstructor
 @NoArgsConstructor
