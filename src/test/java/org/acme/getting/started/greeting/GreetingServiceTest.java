@@ -12,9 +12,18 @@ class GreetingServiceTest {
     @Inject
     GreetingService greetingService;
 
+    @Inject
+    Server server;
+
     @Test
     void testGreeting(){
         Greeting result = greetingService.buildGreet();
         Assertions.assertEquals("hello!", result.getGreet());
+    }
+
+    @Test
+    void testConfigServerSettings(){
+        String host = server.host();
+        Assertions.assertEquals("localhost", host);
     }
 }
