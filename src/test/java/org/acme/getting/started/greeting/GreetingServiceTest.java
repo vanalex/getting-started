@@ -25,5 +25,12 @@ class GreetingServiceTest {
     void testConfigServerSettings(){
         String host = server.host();
         Assertions.assertEquals("localhost", host);
+
+        int port = server.port();
+        Assertions.assertEquals(8080, port);
+
+        boolean enabled = server.log().enabled();
+        Assertions.assertTrue( enabled);
+
     }
 }
