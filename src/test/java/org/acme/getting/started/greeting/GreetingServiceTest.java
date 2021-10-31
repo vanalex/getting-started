@@ -33,4 +33,9 @@ class GreetingServiceTest {
         Assertions.assertTrue( enabled);
 
     }
+
+    @Test
+    void testActions(){
+        greetingService.publishActions();
+    }
 }
