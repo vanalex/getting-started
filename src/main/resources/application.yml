@@ -1,0 +1,11 @@
+greeting:
+  message: hello
+  name: quarkus
+
+server:
+  host: localhost
+  port: 8080
+  log:
+    enabled: true
+    suffix: .log
+    rotate: false
