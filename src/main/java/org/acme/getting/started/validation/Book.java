@@ -1,4 +1,4 @@
-package org.acme.getting.started.greeting.validation;
+package org.acme.getting.started.validation;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;

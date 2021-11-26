@@ -1,4 +1,4 @@
-package org.acme.getting.started.greeting.validation;
+package org.acme.getting.started.validation;
 
 import java.util.Set;
 import javax.enterprise.context.ApplicationScoped;

@@ -6,8 +6,6 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import javax.inject.Inject;
 import javax.validation.ConstraintViolation;
-import org.acme.getting.started.greeting.validation.Book;
-import org.acme.getting.started.greeting.validation.BookValidationService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
