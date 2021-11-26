@@ -1,6 +1,7 @@
 package org.acme.getting.started.greeting;
 
 import io.quarkus.test.junit.QuarkusTest;
+import org.acme.getting.started.greeting.config.Server;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

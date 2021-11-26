@@ -1,4 +1,4 @@
-package org.acme.getting.started.greeting;
+package org.acme.getting.started.greeting.config;
 
 import io.smallrye.config.ConfigMapping;
 
