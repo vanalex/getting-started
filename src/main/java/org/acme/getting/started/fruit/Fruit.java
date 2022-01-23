@@ -1,10 +1,11 @@
 package org.acme.getting.started.fruit;
 
+import io.quarkus.hibernate.reactive.panache.PanacheEntity;
 import java.util.Objects;
 import lombok.Builder;
 
 @Builder
-public class Fruit {
+public class Fruit extends PanacheEntity {
 
   private String name;
   private String description;
