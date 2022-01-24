@@ -16,7 +16,7 @@ class ValidationServiceTest {
   BookValidationService validationService;
 
   @Test
-  void test(){
+  void testValidationService(){
     Book book = Book.builder().pages(0d).build();
     Set<ConstraintViolation<Book>> result = validationService.validate(book);
     Assertions.assertEquals(3, result.size());
