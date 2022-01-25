@@ -18,3 +18,17 @@ quarkus:
   mongodb:
     devservices:
       enabled: true
+
+quarkus:
+  datasource:
+    db-kind: h2
+    jdbc:
+      url: jdbc:h2:mem:testdb
+      max-size: 8
+  hibernate-orm:
+    dialect: org.hibernate.dialect.H2Dialect
+    database:
+      generation: drop-and-create
+    statistics: true
+    metrics:
+      enabled: true
