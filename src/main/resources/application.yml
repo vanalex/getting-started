@@ -10,9 +10,10 @@ server:
     suffix: .log
     rotate: false
 
-quarkus:
-  mongodb:
-    connection-string: mongodb://localhost:27017
+dev:
+  quarkus:
+    mongodb:
+      connection-string: mongodb://localhost:27017
 
 quarkus:
   mongodb:
@@ -32,3 +33,11 @@ quarkus:
     statistics: true
     metrics:
       enabled: true
+
+# Those are the default values and are implicitly assumed
+quarkus:
+  neo4j:
+    uri: bolt://localhost:7687
+    authentication:
+      username: neo4j
+      password: secret
