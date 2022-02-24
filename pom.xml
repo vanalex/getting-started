@@ -90,6 +90,10 @@
       <artifactId>quarkus-neo4j</artifactId>
       <version>1.0.2</version>
     </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-cache</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
