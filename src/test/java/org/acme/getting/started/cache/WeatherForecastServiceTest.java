@@ -1,4 +1,4 @@
-package org.acme.getting.started;
+package org.acme.getting.started.cache;
 
 import io.quarkus.test.junit.QuarkusTest;
 import java.time.LocalDate;
