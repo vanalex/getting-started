@@ -3,7 +3,6 @@ package org.acme.getting.started.cache;
 import io.quarkus.test.junit.QuarkusTest;
 import java.time.LocalDate;
 import javax.inject.Inject;
-import org.acme.getting.started.cache.WeatherForecastService;
 import org.apache.commons.lang3.time.StopWatch;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

@@ -33,6 +33,10 @@ quarkus:
     statistics: true
     metrics:
       enabled: true
+quarkus:
+ native:
+  resources:
+    includes: publicKey.pem
 
 # Those are the default values and are implicitly assumed
 quarkus:
@@ -41,3 +45,10 @@ quarkus:
     authentication:
       username: neo4j
       password: secret
+
+mp:
+  jwt:
+    verify:
+      publickey:
+        location: publicKey.pem
+      issuer: https://example.com/issuer
