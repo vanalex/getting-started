@@ -1,6 +1,6 @@
 package org.acme.getting.started.jwt;
 
-import java.security.Principal;
+import static org.eclipse.microprofile.jwt.Claims.birthdate;
 
 import javax.annotation.security.PermitAll;
 import javax.annotation.security.RolesAllowed;
@@ -35,6 +35,14 @@ public class TokenSecuredResource {
   @Produces(MediaType.TEXT_PLAIN)
   public String helloRolesAllowed(@Context SecurityContext ctx) {
     return getResponseString(ctx) + ", birthdate: " + jwt.getClaim("birthdate").toString();
+  }
+
+  @GET
+  @Path("roles-allowed-admin")
+  @RolesAllowed("Admin")
+  @Produces(MediaType.TEXT_PLAIN)
+  public String helloRolesAllowedAdmin(@Context SecurityContext ctx) {
+    return getResponseString(ctx) + ", birthdate: " + birthdate;
   }
 
   private String getResponseString(SecurityContext ctx) {
