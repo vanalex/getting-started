@@ -59,3 +59,18 @@ mp:
       publickey:
         location: publicKey.pem
       issuer: https://example.com/issuer
+
+dev:
+  quarkus:
+    http:
+      port: 8081
+
+# Configure the incoming `quote-requests` Kafka topic
+mp:
+  messaging:
+    incoming:
+      requests:
+        topic: quote-requests
+        auto:
+          offset:
+            reset: earliest
