@@ -1,11 +1,10 @@
-package org.acme.getting.started;
+package org.acme.getting.started.cdi;
 
 import io.quarkus.test.junit.QuarkusTest;
 import java.util.List;
 import java.util.stream.Collectors;
 import javax.enterprise.inject.Instance;
 import javax.inject.Inject;
-import org.acme.getting.started.cdi.NamingService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
