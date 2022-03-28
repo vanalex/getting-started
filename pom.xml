@@ -116,6 +116,14 @@
       <artifactId>quarkus-rest-client-jackson</artifactId>
     </dependency>
     <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-elasticsearch-rest-client</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-elasticsearch-rest-high-level-client</artifactId>
+    </dependency>
+    <dependency>
       <groupId>com.github.tomakehurst</groupId>
       <artifactId>wiremock-jre8</artifactId>
       <scope>test</scope>

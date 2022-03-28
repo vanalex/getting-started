@@ -74,3 +74,12 @@ mp:
         auto:
           offset:
             reset: earliest
+
+quarkus:
+  elasticsearch:
+    hosts: localhost:9200
+    protocol: http
+    socket-timeout: 10S
+    discovery:
+      enabled: true
+      refresh-interval: 1M
